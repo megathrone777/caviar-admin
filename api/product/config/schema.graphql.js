@@ -1,8 +1,8 @@
 module.exports = {
-  query: "productBySlug(slug: String!): Product",
+  query: "product(slug: String!): Product",
   resolver: {
     Query: {
-      productBySlug: {
+      product: {
         description: "Return post with given slug",
         resolver: "application::product.product.findOne",
       },
